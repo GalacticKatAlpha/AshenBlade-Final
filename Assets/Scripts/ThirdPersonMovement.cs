@@ -6,6 +6,7 @@ public class ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController controller;
     public Transform cam;
+    public Animator anim;
 
     public float speed = 6f;
     public float gravity = -9.81f;
@@ -24,6 +25,47 @@ public class ThirdPersonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            anim.SetTrigger("Run");
+        }
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            anim.SetTrigger("Idle");
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            anim.SetTrigger("Run");
+        }
+
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            anim.SetTrigger("Idle");
+        }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            anim.SetTrigger("Run");
+        }
+
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            anim.SetTrigger("Idle");
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            anim.SetTrigger("Run");
+        }
+
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            anim.SetTrigger("Idle");
+        }
+
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if(isGrounded && velocity.y < 0)
