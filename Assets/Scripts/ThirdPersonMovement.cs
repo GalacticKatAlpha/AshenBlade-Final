@@ -66,6 +66,26 @@ public class ThirdPersonMovement : MonoBehaviour
             anim.SetTrigger("Idle");
         }
 
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            anim.SetTrigger("Attack");
+        }
+
+        if (Input.GetKeyUp(KeyCode.Mouse0))
+        {
+            anim.SetTrigger("AttackToIdle");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            anim.SetTrigger("Attack2");
+        }
+
+        if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            anim.SetTrigger("AttackToIdle2");
+        }
+
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if(isGrounded && velocity.y < 0)

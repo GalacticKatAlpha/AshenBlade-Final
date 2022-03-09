@@ -1011,7 +1011,7 @@ MonoBehaviour:
   controller: {fileID: 1152939357}
   cam: {fileID: 963194228}
   anim: {fileID: 1349397067}
-  speed: 12
+  speed: 18
   gravity: -19.62
   jumpHeight: 3
   groundCheck: {fileID: 691683674}
