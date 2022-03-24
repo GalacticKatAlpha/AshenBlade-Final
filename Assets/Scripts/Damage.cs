@@ -13,6 +13,6 @@ public class Damage : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter(Collider dmg)
     {
-        dmg.gameObject.GetComponent<Health>().TakeDamage(damage);
+        dmg.gameObject.GetComponent<DummyHealth>().TakeDamage(damage);
     }
 }
