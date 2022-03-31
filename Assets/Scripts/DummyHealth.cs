@@ -16,7 +16,7 @@ public class DummyHealth : MonoBehaviour
         alive = true;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-        InvokeRepeating("DoDamage", 1, 5);
+        InvokeRepeating("DoDamage", 20, 1);
     }
 
     void DoDamage()
