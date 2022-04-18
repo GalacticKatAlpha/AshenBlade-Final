@@ -16,13 +16,8 @@ public class DummyHealth : MonoBehaviour
         alive = true;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-        InvokeRepeating("DoDamage", 20, 1);
     }
 
-    void DoDamage()
-    {
-        TakeDamage (10);
-    }
     public void TakeDamage(int damage)
     {
         if (!alive)
@@ -39,5 +34,12 @@ public class DummyHealth : MonoBehaviour
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
+    }
+    private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            TakeDamage(25);
+        }
     }
 }
