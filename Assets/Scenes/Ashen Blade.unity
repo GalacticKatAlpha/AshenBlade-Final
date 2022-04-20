@@ -24547,7 +24547,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697423856}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.959961, y: 3.647995, z: -45.549988}
+  m_LocalPosition: {x: -12.959961, y: 0.1498032, z: -45.549988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 101578897}
@@ -41183,7 +41183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291269328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2199707, y: 3.647995, z: -24.609985}
+  m_LocalPosition: {x: -1.2199707, y: 0.1498032, z: -24.609985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 101578897}
@@ -53671,7 +53671,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811937568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.499939, y: 3.647995, z: 45.04001}
+  m_LocalPosition: {x: -13.499939, y: 0.1498032, z: 45.04001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 101578897}
@@ -55601,7 +55601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922258419}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -63.25995, y: 3.647995, z: -45.549988}
+  m_LocalPosition: {x: -63.25995, y: 0.1498032, z: -45.549988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 101578897}
@@ -58439,6 +58439,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 75f0639e7dafd8b4e8cd09e91ef36b7b, type: 2}
+    - target: {fileID: 9509804, guid: 6b31f8c3b51cd408094418df069e72d7, type: 3}
+      propertyPath: m_UpdateMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9509804, guid: 6b31f8c3b51cd408094418df069e72d7, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b31f8c3b51cd408094418df069e72d7, type: 3}
 --- !u!1 &2107201226
