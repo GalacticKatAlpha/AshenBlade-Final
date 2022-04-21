@@ -35,11 +35,11 @@ public class DummyHealth : MonoBehaviour
 
         healthBar.SetHealth(currentHealth);
     }
-    private void OnCollisionEnter(Collision col)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (col.gameObject.tag == "Player")
+        if (collision.collider.gameObject.CompareTag("Player"))
         {
-            TakeDamage(25);
+            TakeDamage(20);
         }
     }
 }
