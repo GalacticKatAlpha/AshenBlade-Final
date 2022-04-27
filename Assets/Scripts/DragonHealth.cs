@@ -31,7 +31,7 @@ public class DragonHealth : MonoBehaviour
             currentHealth = 0;
 
             alive = false;
-
+            GetComponent<Patroller>().enabled = false;
             anim.SetTrigger("Death");
         }
 
