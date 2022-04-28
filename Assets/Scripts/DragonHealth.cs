@@ -32,7 +32,10 @@ public class DragonHealth : MonoBehaviour
 
             alive = false;
             GetComponent<Patroller>().enabled = false;
+            GetComponent<DragonAttacks>().enabled = false;
+            GetComponent<CapsuleCollider>().enabled = false;
             anim.SetTrigger("Death");
+            gameObject.tag = "Untagged";
         }
 
         currentHealth -= damage;
