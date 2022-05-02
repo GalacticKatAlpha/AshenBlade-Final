@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DragonHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 50;
     public int currentHealth;
@@ -31,11 +31,6 @@ public class DragonHealth : MonoBehaviour
             currentHealth = 0;
 
             alive = false;
-            GetComponent<DragonAttacks>().enabled = false;
-            GetComponent<Patroller>().enabled = false;
-            GetComponent<CapsuleCollider>().enabled = false;
-            anim.SetTrigger("Death");
-            gameObject.tag = "Untagged";
         }
 
         currentHealth -= damage;
@@ -44,9 +39,9 @@ public class DragonHealth : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.CompareTag("Player"))
+        if (collision.collider.gameObject.CompareTag("Dragon"))
         {
-            TakeDamage(20);
+            TakeDamage(10);
         }
     }
 }

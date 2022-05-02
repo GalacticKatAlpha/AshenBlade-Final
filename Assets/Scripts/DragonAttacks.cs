@@ -8,7 +8,7 @@ public class DragonAttacks : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Attack());
+    
     }
 
     IEnumerator Attack()
