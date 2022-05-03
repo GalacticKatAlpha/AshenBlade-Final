@@ -31,6 +31,8 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = 0;
 
             alive = false;
+
+            anim.SetTrigger("Death");
         }
 
         currentHealth -= damage;
@@ -41,7 +43,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.collider.gameObject.CompareTag("Dragon"))
         {
-            TakeDamage(10);
+            TakeDamage(25);
         }
     }
 }
