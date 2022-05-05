@@ -26894,6 +26894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 802851892}
   - component: {fileID: 802851893}
+  - component: {fileID: 802851894}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -26928,6 +26929,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragonCountText: {fileID: 262173986}
+--- !u!114 &802851894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802851891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d864d1326b2c6564c9325e5ab2deaa29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &805885870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010653347892, guid: d7ba4fe833670a140b9b6085652f0e26, type: 3}
@@ -37186,6 +37199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 300
   currentHealth: 300
+  Heal: 10
   alive: 1
   anim: {fileID: 1349397067}
   healthBar: {fileID: 1609861941}

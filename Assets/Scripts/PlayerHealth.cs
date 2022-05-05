@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 50;
-    public int currentHealth;
+    public int currentHealth = 50;
+    public int Heal = 10;
     public bool alive = true;
     public Animator anim;
 
@@ -32,18 +33,25 @@ public class PlayerHealth : MonoBehaviour
 
             alive = false;
 
-            anim.SetTrigger("Death");
+            anim.SetTrigger("PlayerDeath");
+            FindObjectOfType<GameManager>().EndGame();
+
         }
 
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+          TakeDamage(200);
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.gameObject.CompareTag("Dragon"))
         {
-            TakeDamage(25);
+            TakeDamage(35);
         }
     }
 }
