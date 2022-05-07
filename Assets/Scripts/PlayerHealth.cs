@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class PlayerHealth : MonoBehaviour
             alive = false;
 
             anim.SetTrigger("PlayerDeath");
-            FindObjectOfType<GameManager>().EndGame();
+            SceneManager.LoadScene("Death Screen");
 
         }
 
@@ -42,10 +43,6 @@ public class PlayerHealth : MonoBehaviour
 
         healthBar.SetHealth(currentHealth);
 
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-          TakeDamage(200);
-        }
     }
     private void OnCollisionEnter(Collision collision)
     {
