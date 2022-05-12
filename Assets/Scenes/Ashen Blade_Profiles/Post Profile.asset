@@ -101,14 +101,14 @@ MonoBehaviour:
     overrideState: 1
     value: 0
   mixerGreenOutRedIn:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -69
   mixerGreenOutGreenIn:
     overrideState: 1
-    value: 125
+    value: 200
   mixerGreenOutBlueIn:
     overrideState: 0
-    value: 0
+    value: -21
   mixerBlueOutRedIn:
     overrideState: 0
     value: 0
