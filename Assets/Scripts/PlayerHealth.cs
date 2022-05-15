@@ -34,7 +34,8 @@ public class PlayerHealth : MonoBehaviour
 
             alive = false;
 
-            anim.SetTrigger("PlayerDeath");
+            anim.SetTrigger("Death");
+            new WaitForSeconds(3);
             SceneManager.LoadScene("Death Screen");
 
         }

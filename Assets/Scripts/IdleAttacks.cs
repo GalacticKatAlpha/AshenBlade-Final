@@ -18,8 +18,8 @@ public class IdleAttacks : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(5);
-            GetComponent<BoxCollider>().enabled = true;
             anim.SetTrigger("Attack");
+            GetComponent<BoxCollider>().enabled = true;
             yield return new WaitForSeconds(2);
             GetComponent<BoxCollider>().enabled = false;
         }
