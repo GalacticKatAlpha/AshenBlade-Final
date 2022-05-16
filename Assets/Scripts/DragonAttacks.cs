@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DragonAttacks : MonoBehaviour
 {
-    private Animator anim;
+    public Animator anim;
 
     private void Start()
     {

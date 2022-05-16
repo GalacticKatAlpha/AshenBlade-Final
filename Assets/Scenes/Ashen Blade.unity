@@ -8115,6 +8115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ecb9ec1aa3ba314099bb8b5002b4ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 187571213}
 --- !u!65 &187571218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12403,6 +12404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ecb9ec1aa3ba314099bb8b5002b4ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 305934974}
 --- !u!65 &305934979
 BoxCollider:
   m_ObjectHideFlags: 0
