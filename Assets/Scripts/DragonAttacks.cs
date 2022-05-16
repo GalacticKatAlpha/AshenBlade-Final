@@ -4,25 +4,22 @@ using UnityEngine;
 
 public class DragonAttacks : MonoBehaviour
 {
-    public Animator anim;
-
-    private void Start()
-    {
-    
-    }
+    private Animator anim;
 
     IEnumerator Attack()
     {
         anim = GetComponent<Animator>();
-        
+
         while (true)
         {
             yield return new WaitForSeconds(5);
+
             GetComponent<Patroller>().enabled = false;
             GetComponent<BoxCollider>().enabled = true;
+
             anim.SetInteger("AttackIndex", Random.Range(0, 4));
             anim.SetTrigger("Attack");
-            yield return new WaitForSeconds(2);
+
             GetComponent<Patroller>().enabled = true;
             GetComponent<BoxCollider>().enabled = false;
         }

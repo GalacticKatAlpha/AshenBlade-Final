@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IdleAttacks : MonoBehaviour
+public class EnemyAttacks : MonoBehaviour
 {
     private Animator anim;
-
 
     IEnumerator Attack()
     {
@@ -15,12 +14,13 @@ public class IdleAttacks : MonoBehaviour
         {
             yield return new WaitForSeconds(5);
 
-            anim.SetTrigger("Attack");
-
+            GetComponent<Patroller>().enabled = false;
             GetComponent<BoxCollider>().enabled = true;
 
-            yield return new WaitForSeconds(2);
+            anim.SetInteger("AttackIndex", Random.Range(0, 4));
+            anim.SetTrigger("Attack");
 
+            GetComponent<Patroller>().enabled = true;
             GetComponent<BoxCollider>().enabled = false;
         }
     }
