@@ -7,7 +7,7 @@ public class LoadEndGame : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.CompareTag("EndGame"))
+        if (collision.collider.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("End Game Screen");
         }
