@@ -33,6 +33,7 @@ public class DragonHealth : MonoBehaviour
             alive = false;
             anim.SetTrigger("Death");
             gameObject.tag = "Untagged";
+            GetComponent<AudioSource>().enabled = false;
             GetComponent<Patroller>().enabled = false;
             GetComponent<DragonAttacks>().enabled = false;
             GetComponent<CapsuleCollider>().enabled = false;
